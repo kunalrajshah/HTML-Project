@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: aliceblue;
+    }
+    header::before
+    {
+      content: "";
+      background: url('image/3.jpg') no-repeat center;
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      top:0px;
+      left: 0px;
+      z-index: -1;
+      opacity: 0.5;
+
+    }
+
+    section
+    {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      height: 374px;
+      text-align: center;
+      margin:86px 129px;
+    }
+    h1
+    {
+      font-size: 3rem;
+    }
+    p
+    {
+      text-align: center;
+      line-height: 31px;
+    }
+  
+    .items {
+      display: flex;
+      list-style: none;
+    }
+    li
+    {
+      padding:0px 12px;
+      margin:0% 1%;
+    }
+    div h4
+    {
+      padding : 1px 1px 1px 100px; 
+    }
+    a{
+      color: aliceblue;
+      text-decoration: none;
+    }
+    a:hover
+    {
+      color:aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navi">
+      <ul class="items">
+        <li class="a1"><a href="#">Home</a></li>
+        <li class="a1"><a href="#">About us</a></li>
+        <li class="a1"><a href="#">Contact</a></li>
+        <li class="a1"><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1>Welcome to the coding world</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta soluta impedit adipisci cupiditate saepe, illum,
+      magnam repudiandae incidunt earum ex ad veritatis alias corrupti nemo possimus, amet similique illo recusandae!
+    </p>
+    <div><h4>~Kunal-Raj-Shah</h4></div>
+  </section>
+</body>
+
+</html>

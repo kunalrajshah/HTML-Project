@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <title>Payment form</title>
+</head>
+<body>
+  <h1>Payment Form</h1>
+  <h3>Required fields are followed by *</h3>
+  <h1>Contact Information</h1>
+  <form method="post">
+    <p>Name:*<input type="text"name="name" placeholder="Type ur name" required></p>
+    <fieldset>
+      <legend>Gender*</legend>
+      <p>Male<input type="radio" name="gender" id="male" required></p>
+      <p>Female<input type="radio" name="gender" id="female" required></p>
+    </fieldset>
+    <p>Address:<input type="text" name="address"></p>
+    <p>Email:*<input type="email" name="email" id="mail" required placeholder="type ur email"></p>
+    <p>Pincode:*<input type="number" name="pincode" id="pincode" required></p>
+    <h1>Payment Information</h1>
+    <p>Card type:*
+      <select>
+        <option value="">--Select card type--</option>
+        <option value="visa">Visa</option>
+        <option value="master card">Master card</option>
+        <option value="rupay">Rupay</option>
+      </select>
+      <p>Card Number:*<input type="number" name="card number"></p>
+      <p>Expiration Date:*<input type="date"name="exp date"></p>
+      <p>CVV:*<input type="password"name="cvv"></p>
+      <p>UPI id:*<input type="text" name="upi id" placeholder="Type ur upi id"></p>
+     <input type="submit" value="Pay now">
+    </p>
+  </form>
+</body>
+</html>
